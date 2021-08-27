@@ -1,0 +1,525 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+
+/* **********************  레이아웃 영역 선언 **********************  */
+#navi {
+  background-color: transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+#intro {
+  height: 100vh;
+  color: #fff;
+  background: url(../images/lg/intro-img.png) no-repeat;
+  background-size: cover;
+}
+
+#about { 
+  color:#fff;
+  text-align: center; 
+  background-color: #f05f40;
+ }
+
+#service { height:auto; }
+
+#banner {
+  color: #fff;
+  text-align: center;
+  background: url(../images/lg/banner-bg.jpg);
+}
+#footer {
+  height: auto;
+  color: #fff;
+  text-align: center;
+  background-color: #333;
+}
+
+/* Container Area */
+.container, .container-fluid { padding: 105px 15px; } 
+
+
+/* **********************  공통 영역 선언 **********************  */
+
+/* Bootstrap Default Settings */
+.active { 
+  color:#f05f40;
+  background-color: transparent!important;
+ }
+.nav-tabs { border-bottom:transparent;}
+.nav-tabs>li>a:hover { border-color:transparent; }
+.nav-tabs>li>a { border-radius:0; }
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover { 
+  color: #f05f40!important;
+  border-color:transparent;
+  background-color:transparent!important;
+ }
+ .navbar-default { border-color:transparent; }
+ .navbar-default .navbar-nav>li>a:hover {color:#fff;}
+ .navbar-default .navbar-nav>li>a:hover { background-color: #f2ac15; }
+
+
+ /* 시안 확인용 Class 활성화 */
+ .gnb-on1 { background-color: #f2ac15; }
+
+ /* 스파이 스크롤 : hover  */
+ .gnb-on2 { color:#f05f40!important; }
+
+ /* 네비게이션 스크롤 전 스타일 */
+ .gnb-on3 { color:#fff!important; }
+ 
+ /* 네비게이션 스크롤시 변경 클래스 */
+ .fixed { background-color: #fff!important; }
+ .fixed a {color:#555;}
+ .fixed h1 a { color:#f05f40!important; }
+ .fixed #gnb ul li a:hover { background-color:transparent!important; }
+
+
+/* Title Area Setting */
+.title { text-align: center; }
+
+.title h2 {
+  position: relative;
+  font:500 3.7rem/37px 'Roboto',sans-serif;
+  margin-bottom:42px;
+ }
+
+ /* title-bar setting */
+.title h2::after {
+  content:'';
+  display:block;
+  width:65px;
+  height:3px;
+  background-color: #f05f40;
+  position: absolute;bottom:-42px;left:50%;
+  -webkit-transform:translateX(-50%);
+  -moz-transform:translateX(-50%);
+  -o-transform:translateX(-50%);
+  transform:translateX(-50%);
+  margin-bottom:21px;
+}
+
+.title p { 
+  width:563px;
+  height:63px;
+  margin:0 auto 84px;
+  font: 300 1.4rem/21px 'Roboto', sans-serif;
+ }
+
+/* Button Setting */
+.btn { 
+  display:inline-block;
+  width:180px;
+  height:42px;
+  background-color: #fff;
+  border-radius: 21px;
+  font: bold 1.4rem/30px 'Roboto',sans-serif;
+  color:#333;
+ }
+ .btn:hover { background-color: #e2e2e2; }
+ 
+
+/* Spy-Scroll Setting */
+body {position: relative;}
+a {color:#fff;}
+a:hover { color:#fff; }
+.navi { position: relative; height:auto; }
+
+
+/* **********************  NAVI AREA START **********************  */
+#navi .container {  
+  position: relative;
+  height:63px;
+  padding:0;
+  }
+  
+#navi h1 { 
+  width:113px;
+  height:21px;
+  font: bold 2.1rem/21px 'Roboto',sans-serif;
+  position: absolute;left:15px;top:21px;
+ }
+ 
+ 
+/* Gnb Area Start */
+ #gnb ul { margin-top:7px; }
+ #gnb ul li a { font: 700 1.4rem/21px 'Roboto', sans-serif; }
+
+
+ 
+/* ********************** INTRO AREA START ********************** */
+#intro  .title {
+  -webkit-transform:translateY(50%);
+  -moz-transform:translateY(50%);
+  -o-transform:translateY(50%);
+  transform:translateY(50%);
+}
+
+#intro h2 { font:700 5.2rem/63px 'Roboto',sans-serif; }
+#intro .btn { background-color:#f05f40; color:#fff; }
+#intro .btn:hover {background-color: #ac2925;}
+
+
+/* ********************** SERVICE AREA START ************** */
+#service .title { margin-bottom:84px;  }
+#service .content>div { width:278px; height:auto; text-align: center; }
+#service .content>div>i { 
+  font-size:4rem;
+  line-height:42px;
+  margin-bottom:21px;
+  color:#f05f40;
+ }
+
+#service .content>div>h3 { 
+  margin-bottom:21px;
+  font: 400 2.5rem/21px 'Roboto', sans-serif;
+ }
+
+ #service .content>div>p {font: 400 1.4rem/21px 'Roboto', sans-serif;}
+
+
+/* **********************  PORTFOLIO AREA START ********************** */
+#portfolio .container-fluid { padding: 105px 0; }
+
+/* Title Area */
+#portfolio .title { margin-bottom:63px; }
+#portfolio .title h2 {margin-bottom: 80px;}
+
+/* g-menu Area */
+#portfolio .g-menu { display:flex; justify-content: center; }
+#portfolio .g-menu >li{ list-style:none; }
+#portfolio .g-menu>li>a{
+  display:block;
+  width:100px;
+  height:42px;
+  border: 1px solid #999;
+  color:#333;
+  font: 400 1.5rem/42px 'Roboto', sans-serif;
+}
+#portfolio .g-menu>li:nth-child(2){ margin:0 30px; }
+#portfolio .g-menu>li>a:hover { background-color: #e2e2e2;}
+
+/* g-menu: active: => html */
+.gmenuOn { background-color: #e2e2e2; }
+
+/* Portfolio Gallery Area : isotope */
+#portfolio .grid-item { width: 33.33333333333333%; }
+#portfolio .grid-item>a {
+  display:block;
+  width:100%;
+  height:100%;
+  position: relative;
+}
+#portfolio .grid-item>a>div {
+  position: absolute;
+  left:.0;top:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(255, 47, 0, 0.5);
+  display:none;
+}
+
+/* Gallery Image Hover 활성화 클래스 */
+.grid-hover { display:block!important; }
+
+#portfolio .grid-item>a>div>span {
+  position: absolute;
+  left:50%;top:50%;
+  width:100%;
+  text-align: center;
+  -webkit-transform:translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+  -o-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+  font: bold 5rem/1.5 'Roboto',sans-serif;
+  color:#fff;
+}
+
+#portfolio .grid-item>a>img {
+  display:block;
+  width:100%;
+  height:100%;
+}
+
+/* **********************  MEMBER AREA START ********************** */
+#member .title>div>h2 { margin-bottom: 79px; }
+#member .content>div { 
+  width:370px;
+  height:315px;
+  text-align: center;
+} 
+#member .content>div>p { margin:0; }
+#member .content>div>div { 
+  width:167px;
+  height:167px;
+  margin:auto;
+  position: relative;
+  cursor:pointer;
+} 
+
+#member .content>div>p:nth-child(2){ margin:21px 0; font:500 1.4rem/21px 'Roboto',sans-serif; }
+#member .sns-group{
+  position: absolute;left:50%;top:50%;
+  -webkit-transform:translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+  -o-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+  font-size:2rem;
+  display:none;
+}
+#member .sns-group>a { line-height:167px; font-size:2rem; color:#fff; }
+
+/* 멤버 HOVER 활성화 클래스 */
+.icon-on { display:block!important; }
+
+
+/* **********************  BANNER AREA START ********************** */
+#banner .title { height:auto; }
+#banner .title h2 { margin-bottom:58px; }
+#banner .title p { width:730px; margin-bottom:0; height:21px; }
+
+
+/* ********************** CONTACT AREA START ********************** */
+#contact .title { height:auto; }
+#contact .title h2 { margin-bottom:79px; }
+#contact .title p { width:600px;  margin-bottom:63px;}
+#contact .content>div { 
+  width:380px;
+  height:105px;
+  text-align: center;
+  font: 400 1.6rem/21px 'Roboto',sans-serif;
+ } 
+#contact .content>div>i { font-size:3.5rem; margin-bottom:21px; color:#333; }
+
+
+/* **********************  FOOTER AREA START ********************** */
+#footer .container { height:63px; padding:0;}
+#footer>div>p { 
+  font: 400 1.4rem/21px 'Roboto',sans-serif;
+  padding:21px 0; margin:0;
+ }
+
+
+
+
+
+
+/* **********************  MEDIA QUERY AREA START ********************** */
+
+ /* Desktop Device */
+ @media screen and (max-width: 1199px) {
+
+   .container{ width: 930px; padding: 105px 15px; }
+   
+
+  /* ***********  Intro Area Start ************ */
+  #intro {
+    background: url(../images/md/intro-img.png) no-repeat;
+    background-size: cover;
+    height: 798px;
+  }
+   #intro h2 { font-size:4.5rem; }
+
+
+  /* ***********  Service Area Start ************ */
+   #service .content>div { width:25%; }
+
+
+   /* ***********  Portfolio Area Start ************ */
+   #portfolio .grid-item>a>div>span { font-size:3rem; }
+   
+   
+   /* ***********  Member Area Start ************ */
+   #member .content>div { width:33.33333333333333%; }
+   #member .content>div>p { border: 1px solid #fff; }
+
+
+   /* ***********  Contact Area Start ************ */
+   #contact .content>div { width:33.33333333333333%; }
+   
+
+ }/* Desktop End */
+
+
+
+ @media screen and (min-width:768px) and (max-width:959px) {
+
+  .container{ width: 100%; padding: 105px 15px; }
+  .navbar-right { margin-right: 0px; }
+
+
+  /* ***********  Service Area Start ************ */
+  #service .content>div { width:50%; }
+  #service .content>div>p { 
+    margin-bottom:42px!important;
+    width: 90%;
+    margin: auto;
+   }
+  #service .content>div>p:last-child { margin-bottom:0; }
+
+
+  /* ***********  Portfolio Area Start ************ */
+  #portfolio .grid-item>a>div>span {
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+
+  /* ***********  Banner Area Start ************ */
+  #banner { background: url(../images/md/banner-bg.png); }
+  
+
+ }/* 중간대역 End */
+
+
+
+
+
+ @media screen and (max-width: 767px){
+  .container { width:540px; }
+  .nav-tabs>li { float:none; }
+  .navbar-toggle { 
+      top:7px;
+      width: 35px;
+      height: 32px;
+    }
+  .navbar-header { height:100%; }
+  .navbar-default .navbar-toggle { background-color: transparent; top:8px; }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form { border-color:transparent; }
+
+  .fixed ul { background-color: rgba(255,255,255,0.5)!important; }
+
+
+  /* ***********  Navi Area Start ************ */
+  #navi { border-bottom: 1px solid #ccc;}
+  #navi h1 { left:5px; top:21px; }
+  #gnb ul {
+    background: rgba(0, 0, 0, 0.3);
+    margin-top: 0;
+  }
+  #gnb ul li a { text-indent: 10px; }
+
+
+  /* ***********  Intro Area Start ************ */
+  #intro { 
+    height:797px;
+    background: url(../images/sm/intro-img.png) no-repeat;
+    background-size: cover;
+   }
+
+  #intro .title { 
+     width: 468px;
+     margin: auto;
+     -webkit-transform: translateY(25%);
+     -moz-transform: translateY(25%);
+     -o-transform: translateY(25%);
+     transform: translateY(25%);
+    }
+
+  #intro .title p { width:100%; }
+  #intro h2 { font-size:4rem; }
+  #intro h2 br { display:none; }
+  
+  
+  /* ***********  About Area Start ************ */
+  #about .title p { width:100%; }
+  
+
+  /* ***********  Banner Area Start ************ */
+  #banner .title p { width:100%; }
+
+
+  /* ***********  Contact Area Start ************ */
+  #contact .title p { width:100%; }
+  
+
+  /* ***********  Portfolio Area Start ************ */
+  #portfolio .grid-item { width:50%; }
+  #portfolio .grid-item>a>div>span { font-size:2.7rem; width:100%; text-align: center; }
+  
+  
+    /* ***********  Member Area Start ************ */
+    #member .content>div { width:100%; margin-bottom:63px; height:auto;}
+    #member .content>div>div { margin-bottom:21px; }
+    #member .content>div:nth-child(n+3) { margin-bottom:0; }
+    #member .content>div>p:nth-child(2) { margin-bottom:21px!important; }
+    #member .content>div>p:nth-child(2), 
+    #member .content>div>p { width:330px; margin:auto; }
+    #member> br { display:block; }
+
+    .icon-bar:nth-child(2) { position: absolute; top: 8px; left: 6px; }
+    .icon-bar:nth-child(3) { position: absolute; top: 10px; left: 6px; }
+    .icon-bar:nth-child(4) { position: absolute; top: 16px; left: 6px; }
+
+
+    /* ***********  Service Area Start ************ */
+    #service .content>div { width:50%; margin-bottom:21px; }
+    #service .content>div:nth-child(n+3),#service .content>div:nth-child(n+4) { margin-bottom:0; }
+    #service .content>div>p { width:225px; margin:auto;}
+
+
+    /* ***********  Contact Area Start ************ */
+    #contact .content>div { width:100%; margin-bottom:42px; }
+    #contact .content>div:last-child{ margin-bottom:0; }
+    
+
+    /* ***********  Mobile-Btn Area Start ************ */
+    #mobile_btn>span { background-color: #ccc; }
+    #mobile_btn:hover { background-color: #f2ac15 !important; border-color: #ccc; }
+
+    .mobile-on { background-color: #f2ac15!important; }
+    .mobile-off { background-color: transparent!important; }
+    .mobile_btn { top:5px; }   
+    
+
+ }/* Tablet End */
+
+
+
+
+
+ @media screen and (max-width: 576px){
+  
+  .container { width:480px; }
+
+   /* ***********  Navi Area Start ************ */
+  #navi { padding:0; }
+  #intro h2 { font-size:3.5rem; }
+  #intro { background: url(../images/xs/intro-img.png) no-repeat; background-size:cover; height:768px;}
+  #intro .title { 
+    -webkit-transform: translateY(25%);
+    -moz-transform: translateY(25%);
+    -o-transform: translateY(25%);
+    transform: translateY(25%);
+    width: 452px;
+    margin: auto;
+   }
+   #about .title h2 { font-size:3rem; }
+   #intro .title p { margin-bottom:42px; }
+  #portfolio .grid-item { width:100%; }
+  #service .title { margin-bottom: 63px; }
+  #service .content>div { width:100%; }
+  #service .title p { margin-bottom:42px; }
+  #service .content>div>p { margin-bottom:42px; }
+  #service .content>div>p:last-child{ margin-bottm:0; }
+  #service .content>div:last-child { margin-bottom:0; }
+  #intro .title p { width:100%; }
+  #about .title p { width:100%; }
+  #contact .title p { width:100%; }
+  #banner .title p { width:100%; }
+  #banner .title h2 { font-size:3rem; }
+
+ 
+
+  #portfolio .grid-item>a { width:100%; height:100%; }
+  .navbar-toggle { margin-right: 21px; }
+  
+ }
+ 
